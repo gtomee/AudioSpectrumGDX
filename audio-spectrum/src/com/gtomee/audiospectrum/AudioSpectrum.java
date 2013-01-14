@@ -46,9 +46,6 @@ public class AudioSpectrum extends Game {
 		width = Gdx.graphics.getWidth();
 		height = Gdx.graphics.getHeight();
 
-		System.out.println("width=" + width);
-		System.out.println("height=" + height);
-
 		camera.setToOrtho(false, WIDTH, HEIGHT);
 		// load texture
 		colors = new Texture(Gdx.files.internal("data/colors-borders.png"));
