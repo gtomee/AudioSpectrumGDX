@@ -16,9 +16,6 @@ public class AudioSpectrum extends Game {
 	public static final int WIDTH = 800;
 	public static final int HEIGHT = 480;
 
-	private int width = WIDTH;
-	private int height = HEIGHT;
-
 	String FILE = "data/justice-new-lands.mp3";
 	Mpg123Decoder decoder;
 	AudioDevice device;
@@ -43,8 +40,6 @@ public class AudioSpectrum extends Game {
 	public void create() {
 		// create the camera
 		camera = new OrthographicCamera();
-		width = Gdx.graphics.getWidth();
-		height = Gdx.graphics.getHeight();
 
 		camera.setToOrtho(false, WIDTH, HEIGHT);
 		// load texture
